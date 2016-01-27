@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SampleWrapperPod"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Sample Wrapper class for learning"
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Vigneshkarthik" => "nvkarthik24@gmail.com" }
-  s.source           = { :git => "https://github.com/nvkarthik24/SampleWrapperPod.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/nvkarthik24/SampleWrapperPod.git", :tag => s.version.to_s, :submodules => true  }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -35,4 +35,15 @@ s.source_files = '*.{h,m}'
   # s.public_header_files = 'SampleWrapperPod/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
+
+s.subspec 'SampleWrapper' do |ss|
+ss.source_files = 'SampleWrapper/SampleWrapper.{h,m}'
+ss.public_header_files = 'SampleWrapper/SampleWrapper.h'
+end
+
+s.subspec 'SampleWrapperDelegate' do |ss|
+ss.source_files = 'SampleWrapperDelegate/SampleWrapperDelegate.{h,m}'
+ss.public_header_files = 'SampleWrapperDelegate/SampleWrapperDelegate.h'
+end
+
 end
