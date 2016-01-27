@@ -1,25 +1,29 @@
 {
   "name": "SampleWrapperPod",
   "version": "0.1.0",
-  "summary": "A short description of SampleWrapperPod.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SampleWrapperPod",
+  "summary": "Sample Wrapper class for learning",
+  "homepage": "https://github.com/nvkarthik24/SampleWrapperPod",
   "license": "MIT",
   "authors": {
     "Vigneshkarthik": "nvkarthik24@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SampleWrapperPod.git",
+    "git": "https://github.com/nvkarthik24/SampleWrapperPod.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "*.{h,m}",
   "resource_bundles": {
     "SampleWrapperPod": [
-      "Pod/Assets/*.png"
+      "*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
     ]
   }
 }

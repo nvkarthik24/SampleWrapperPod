@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SampleWrapperPod_Tests/AFNetworking.framework"
   install_framework "Pods-SampleWrapperPod_Tests/SampleWrapperPod.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SampleWrapperPod_Tests/AFNetworking.framework"
   install_framework "Pods-SampleWrapperPod_Tests/SampleWrapperPod.framework"
 fi
