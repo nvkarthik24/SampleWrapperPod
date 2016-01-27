@@ -1,0 +1,6 @@
+framework module Pods_SampleWrapperPod_Example {
+  umbrella header "Pods-SampleWrapperPod_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

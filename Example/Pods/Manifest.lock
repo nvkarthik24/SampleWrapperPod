@@ -1,0 +1,14 @@
+PODS:
+  - SampleWrapperPod (0.1.0)
+
+DEPENDENCIES:
+  - SampleWrapperPod (from `../`)
+
+EXTERNAL SOURCES:
+  SampleWrapperPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SampleWrapperPod: 6d615dfabd4553eb19124afde595436c11b604ac
+
+COCOAPODS: 0.39.0
