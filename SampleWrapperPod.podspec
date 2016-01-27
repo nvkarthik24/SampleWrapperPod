@@ -37,13 +37,13 @@ s.source_files = '*.{h,m}'
   s.dependency 'AFNetworking', '~> 2.3'
 
 s.subspec 'SampleWrapper' do |ss|
-ss.source_files = 'SampleWrapperPod/SampleWrapper.{h,m}'
-ss.public_header_files = 'SampleWrapperPod/SampleWrapper.h'
+ss.source_files = '**/SampleWrapper.{h,m}'
+ss.public_header_files = '**/SampleWrapper.h'
 end
 
 s.subspec 'SampleWrapperDelegate' do |ss|
-ss.source_files = 'SampleWrapperPod/SampleWrapperDelegate.{h,m}'
-ss.public_header_files = 'SampleWrapperPod/SampleWrapperDelegate.h'
+ss.source_files = '**/SampleWrapperDelegate.{h,m}'
+ss.public_header_files = '**/SampleWrapperDelegate.h'
 end
 
 end
