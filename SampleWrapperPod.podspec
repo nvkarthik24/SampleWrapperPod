@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SampleWrapperPod"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Sample Wrapper class for learning"
 
 # This description is used to generate tags and improve search results.
@@ -37,13 +37,13 @@ s.source_files = '*.{h,m}'
   s.dependency 'AFNetworking', '~> 2.3'
 
 s.subspec 'SampleWrapper' do |ss|
-ss.source_files = 'SampleWrapper.{h,m}'
-ss.public_header_files = 'SampleWrapper.h'
+ss.source_files = 'SampleWrapperPod/SampleWrapper.{h,m}'
+ss.public_header_files = 'SampleWrapperPod/SampleWrapper.h'
 end
 
 s.subspec 'SampleWrapperDelegate' do |ss|
-ss.source_files = 'SampleWrapperDelegate.{h,m}'
-ss.public_header_files = 'SampleWrapperDelegate.h'
+ss.source_files = 'SampleWrapperPod/SampleWrapperDelegate.{h,m}'
+ss.public_header_files = 'SampleWrapperPod/SampleWrapperDelegate.h'
 end
 
 end
